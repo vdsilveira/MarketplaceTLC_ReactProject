@@ -5,7 +5,7 @@ import './footer.css'; // Corrija o caminho para Footer.css
 function Footer() {
   return (
     <footer className="footer">
-      <h2>TLC | Telecoin - Markteplace De Telecom </h2>
+      <h2>TLC | Telecoin - Marketplace De Telecom </h2>
     </footer>
   );
 }
