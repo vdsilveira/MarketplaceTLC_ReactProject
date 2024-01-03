@@ -1,0 +1,52 @@
+.profile {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Dividir em 3 colunas com largura igual */
+    align-items: center;
+    text-align: center;
+    margin-top: 7rem;
+    background-color: rgba(153, 154, 155, 0.11);
+    
+  }
+  
+  .user-info-container,
+  .info-container1,
+  .info-container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+ 
+  }
+
+  
+  .foto {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 5px;
+    margin-top: 7px;
+    margin-left: 15px;
+  }
+  
+  .User {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 8px;
+  }
+  
+ 
+  .TLC,
+  .RS {
+    margin: 5px;
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .Wallet,
+  .Contratos{ 
+    margin: 5px;
+    font-size: 14px;
+    text-align: left;
+}
+  

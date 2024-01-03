@@ -1,0 +1,49 @@
+const express = require('express');
+const bodyParser = require('body-parser');
+const sqlite3 = require('sqlite3');
+
+const app = express();
+const port = 3001;
+
+app.use(bodyParser.json());
+
+// Conectar ao banco de dados SQLite
+const db = new sqlite3.Database('database.db');
+
+// Criar tabela de usuários se não existir
+db.run(`
+  CREATE TABLE IF NOT EXISTS usuarios (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    login TEXT,
+    senha TEXT,
+    email TEXT,
+    tipoUsuario TEXT
+  )
+`);
+
+// Rota para lidar com o cadastro
+app.post('/api/cadastro', (req, res) => {
+  const { login, senha, email, tipoUsuario } = req.body;
+
+  // Aqui você pode adicionar a lógica de validação dos dados
+
+  // Inserir usuário no banco de dados
+  db.run(
+    'INSERT INTO usuarios (login, senha, email, tipoUsuario) VALUES (?, ?, ?, ?)',
+    [login, senha, email, tipoUsuario],
+    (err) => {
+      if (err) {
+        console.error('Erro ao inserir usuário:', err);
+        res.status(500).send('Erro interno do servidor');
+      } else {
+        console.log('Usuário inserido com sucesso.');
+        res.status(200).send('Cadastro realizado com sucesso!');
+      }
+    }
+  );
+});
+
+// Iniciar o servidor
+app.listen(port, () => {
+  console.log(`Servidor rodando em http://localhost:${port}`);
+});

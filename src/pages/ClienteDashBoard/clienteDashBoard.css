@@ -1,0 +1,32 @@
+.Card-page {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    margin-top: 3rem;
+  }
+  
+  .dadosMoveis-container,
+  .Internet-container,
+  .OutroServico-container {
+    flex: 0 1 calc(30% - 20px); /* Largura de cada contêiner */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+  }
+  
+  .dadosMoveis-container img,
+  .Internet-container img,
+  .OutroServico-container img {
+    width: 100%;
+    height: 150px; 
+    object-fit: cover;
+  }
+  
+
+  

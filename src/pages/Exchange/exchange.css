@@ -1,0 +1,80 @@
+/* exchange.css */
+
+.container-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+  }
+  
+  .container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+  }
+  
+  .swap_container {
+    background-color: #f0f0f0;
+  }
+  
+  .deposito_container {
+    background-color: #e0e0e0;
+  }
+  
+  h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Divisão do container em três partes */
+  .container-part {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Parte do título (h2) */
+  .title-part {
+    margin-bottom: 10px;
+  }
+  
+  /* Parte dos botões e campos de entrada */
+  .input-part {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  /* Parte do saldo */
+  .saldo-part {
+    margin-top: 10px;
+  }
+  
+  input {
+    padding: 8px;
+    margin-right: 8px;
+  }
+  
+  button {
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .botaoAzul {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .botaoVermelho {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  /* Adicione seus próprios estilos para os componentes SecundHeader, Footer e DashBoardProfile */
+  

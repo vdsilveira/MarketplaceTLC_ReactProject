@@ -1,0 +1,36 @@
+/* header.css */
+
+.header {
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid black;
+    height: 7rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+  }
+  
+  .logo {
+    width: 150px;
+    height: 150px;
+    background-image: url('../imagens/favicon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-left: 4px;
+  }
+  
+  .header span {
+    font-size: 2rem;
+    color: black;
+    margin: 0; /* Remova a margem */
+  }
+  
+  .header a {
+    text-decoration: none;
+    color: blueviolet;
+    padding-inline: 0.5rem;
+    margin-inline: 0.5rem; /* Adicione margem aos links se necessário */
+  }
+  
